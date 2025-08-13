@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        header, main, footer {
+            max-width: 900px;
+            margin: auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #555;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 6px;
+            margin-top: 4px;
+        }
+        input[type="submit"] {
+            width: auto;
+            background: teal;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 15px;
+        }
+        input[type="submit"]:hover {
+            background: darkcyan;
+        }
+        .media-section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HTML5 Enhanced Content & Form Example</h1>
+    <p>This page demonstrates HTML5 advanced content elements and form features with built-in validation.</p>
+</header>
+
+<main>
+    <section>
+        <h2>Popular Web Technologies</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>React.js</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Top Programming Languages (2025)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Language</th>
+                    <th>Usage (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>JavaScript</td>
+                    <td>65%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Python</td>
+                    <td>60%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Java</td>
+                    <td>50%</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="media-section">
+        <h2>Media Showcase</h2>
+        <figure>
+            <img src="https://via.placeholder.com/600x300" alt="Sample Image" width="100%">
+            <figcaption>Sample HTML5 Image</figcaption>
+        </figure>
+
+        <audio controls>
+            <source src="Nitasmile.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+
+        <video width="100%" controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+254700000000" required pattern="^\+?\d{10,15}$">
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required minlength="4" maxlength="15">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="6">
+
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required minlength="6">
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label>
+                    <input type="checkbox" name="newsletter" value="yes" checked>
+                    Subscribe to newsletter
+                </label>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Write your comments here..."></textarea>
+            </fieldset>
+
+            <input type="submit" value="Register">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 HTML5 Assignment Demo</p>
+</footer>
+
+</body>
+</html>
